@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Listado de Estudiantes a la fecha {{fecha|date}}:</h2>
+    <div *ngFor="let estudiante of estudiantes">
+        <div *ngIf="estudiante.nota>= 5">
+            <h3 [ngClass]="estudiante.nota>=5 ? 'error': 'sucess' ">el estudiante {{estudiante.nombre}} ha Aprobado el
+                curso
+                de {{estudiante.curso}} con la nota de {{estudiante.nota}}</h3>
+
+        </div>
+        <div *ngIf="estudiante.nota<5">
+            <h3 [ngClass]="estudiante.nota<5 ? 'sucess': 'error' ">el estudiante {{estudiante.nombre}} ha Desaprobado el
+                curso de {{estudiante.curso}} con la nota de {{estudiante.nota}}</h3>
+        </div>
+    </div>
+</div>
