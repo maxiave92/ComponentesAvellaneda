@@ -4,62 +4,9 @@
             <app-sidebar></app-sidebar>
         </div>
         <div class="col py-3">
-            <app-entregable2></app-entregable2>
-            <!-- <h3>Paginas de interes</h3>
-            <hr>
-
-            <div class="row row-cols-2 row-cols-md-4 g-4">
-                <a href="https://www.coderhouse.com/" class="gale">
-                    <div class="col">
-                        <div class="card">
-                            <img src="data:image/png;base64,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"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">CoderHouse</h5>
-                                <p class="card-text">La mejor Plataforma para capacitarte,con los profesores y tutores mas cracks!</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.infobae.com/america/" class="gale">
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/ea/b3/53/eab3534d-72b7-5a1e-e69f-5380282bc1f8/AppIcon-Argentina-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-8.png/1200x600wa.png"
-                                class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Infobae</h5>
-                                <p class="card-text">Pagina Para informase de la Guerra de Putin</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://stackoverflow.com/" class="gale">
-                    <div class="col">
-                        <div class="card">
-                            <img src="data:image/png;base64,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"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Stackoverflow</h5>
-                                <p class="card-text">La Mejor Pagina web para buscar ayuda cuando estas en aprietos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://lacuerda.net/" class="gale">
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIMMnchn3ckmwRkNFnAYnJsBhkzK4-9afFrqr1NJYrjiuyYBZm66Ic0D2ay4PsJAYgoA&usqp=CAU"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">La Cuerda</h5>
-                                <p class="card-text">La Mejor Pagina web para aprender a tocar las canciones que mas te gustan
-                                    en Guitarra.</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div> -->
+            <!-- <app-entregable1></app-entregable1> -->
+            <!-- <app-entregable2></app-entregable2> -->
+            <app-entregable3></app-entregable3>
+        </div>
     </div>
 </div>

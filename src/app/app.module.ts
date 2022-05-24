@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { Entregable2Component } from './entregable2/entregable2.component';
+import { Entregable3Component } from './entregable3/entregable3.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,13 @@ import { Entregable2Component } from './entregable2/entregable2.component';
     FooterComponent,
     HeaderComponent,
     SidebarComponent,
-    Entregable2Component
+    Entregable2Component,
+    Entregable3Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
